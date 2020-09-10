@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Buttery smooth home network (23-07-20) [ 19hours ]</title>
+  <meta name="description" content="Buttery smooth home network (23-07-20)">
+  <link href="/public/reset.css" rel="stylesheet">
+  <link href="/public/19hours.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="top-bar container">
+    <div>
+      <img class="clock" src="/public/silk_icons/clock.png" />
+      <span id="datetime"></span>
+    </div>
+    <div>
+      <a class="language-link" href="/notice/buttery-smooth-home-network-23-07-20">english</a>
+      <a class="language-link" href="/cn/notice/buttery-smooth-home-network-23-07-20">中文</a>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="header">
+      <h1 class="logo"><a href="/">[19hours]</a></h1>
+      <h2 class="lead">My little internet corner</h2>
+      <img class="badminton" src="/public/images/badminton.png" />
+    </div>
+    <div class="welcome-box">
+      Welcome to my website. I write in English and 中文. I am also learning cantonese. Please tell me if you know any
+      good movies in cantonese. To change languages, select it in the upper right hand tab.
+    </div>
+    <nav class="site-nav">
+      <a class="site-nav-link" href="/">
+        <img src="/public/custom_icons/home.png" />
+        Home
+      </a>
+      <a class="site-nav-link" href="/dripcoffee">
+        <img src="/public/custom_icons/coffee.png" />
+        Drip Coffee
+      </a>
+      <a class="site-nav-link" href="/colouring">
+        <img src="/public/custom_icons/my-painting.png" />
+        Colouring
+      </a>
+      <a class="site-nav-link" href="/poems">
+        <img src="/public/custom_icons/poems.png" />
+        Poems
+      </a>
+      <a class="site-nav-link" href="/bonnietheeggplant">
+        <img src="/public/custom_icons/gardening.png" />
+        Bonnie
+      </a>
+      <a class="site-nav-link" href="/mytopmovies">
+        <img src="/public/custom_icons/film.png" />
+        Top Movies
+      </a>
+      <a class="site-nav-link" href="https://instagram.com/19.hours">
+        <img src="/public/custom_icons/instagram.png" />
+        Instagram
+      </a>
+    </nav>
+    <div class="content">
+      <aside class="side-bar">
+        <div class="box">
+          <div class="box-header">
+            <img class="box-icon" src="/public/silk_icons/emoticon_smile.png" />
+            Hello...This is me...
+          </div>
+          <div class="box-content">
+            <img id="me" src="/public/images/me.jpeg" />
+            <p>I saw everyone had professional photos taken for linked in so I just cropped mine out from a holiday
+              photo. This photo has a white background and a nice smile. It was taken more than 6 years ago.</p>
+          </div>
+        </div>
+      </aside>
+      <div class="sauce sauce-notice">
+        <div class="notice-container box single-notice">
+          <div class="notice-table-header"><img class="notice-icon" src="/public/silk_icons/note.png" />Notice: Buttery
+            smooth home network (23-07-20)</div>
+          <p>Working at home is nice and comfy but a flaky internet connection can make everyone go crazy. So this
+            morning I took the spare routers that you get from recontracting your ISP plans to reproduce a 4g internet
+            experience at home. It's super fast and convenient because every device switches to the best access point on
+            its own. No more manually switching to different bands when you're close to the router and when you're not.
+            It really feels like 4g at home, but with 4x faster download speeds and 11x upload speeds anywhere you sit
+            or sleep.</p>
+          <p>There are many ways to improve network connectivity at home. I considered two methods, using mesh networks
+            and using access points and using access points is the better option for me.</p>
+          <b>Differences between mesh networks and access points</b>
+          <p>Imagine Karen throwing a stack of loose change to Bob, who is standing 10 meters away from her. When Bob
+            catches the money, half of it has flown away and he's left with coins. He takes what's left and mints more
+            of the same coins to throw to Kevin who is standing 10 meters away from him. This is mesh networking.</p>
+          <p>In another scenario, Karen calls a courier, maybe Singpost, to deliver the stack of money to Bob. It's an
+            unregistered post. 9 out of 10 times, Mr Courier accidentally pokes a hole in the packet and coins fall out.
+            After receiving the mail and without checking if anything's missing, Bob throws the money to Kevin. This is
+            wireless access point.</p>
+          <p>There are benefits to using mesh networks like not needing ethernet ports and devices being cheaper. But
+            they come with a performance cost.</p>
+          <b>Quick guide for StarHub and Singtel and M1</b>
+          <ul>
+            <li><img src="/public/silk_icons/bullet_go.png" />You will need extra routers to act as access points,
+              ethernet cables and one ethernet port at each place where you want to put an access point.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />The main router connected to the ISP modem needs to have
+              DHCP server and NAT enabled. </li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Other routers must disable both DHCP server and NAT.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Set your main router's IP address and subnet. You'll also
+              want the DHCP server to distribute IP addresses in a certain range because you need static IPs for
+              specific devices like your other routers and also things like printers.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Connect your ISP modem to your WAN port on your main
+              router.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Connect the main router to your access point routers
+              through LAN. It's important not to connect to the WAN port on your access point router. That way it won't
+              work.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Enable access point option in the settings for certain
+              routers.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Set your access point routers to use a static ip, and use
+              the main router ip as the default gateway. Remember to use the same subnet as your main router.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Configure all routers, including the main router, to
+              broadcast the same SSID across both bands, 2.4Ghz and 5Ghz. Make sure that they have the same password
+              too. This will let devices switch access points seamlessly.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Reboot all routers.</li>
+            <li><img src="/public/silk_icons/bullet_go.png" />Enjoy buttery smooth network connections on all devices
+              everywhere in the house.</li>
+          </ul>
+          <img src="images/wifi-network-nearby.png" />
+          <p>Don't settle for anything less than 4 bars.</p>
+          <a class="go-back" href="/"><img src="/public/silk_icons/resultset_previous.png" />Go back</a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content box-footer">
+        <img class="border-collie" src="/public/images/border-collie.png" />
+        <p>19hours.net is my site. Please do not copy without permission and take things out of context. Otherwise,
+          enjoy my site. It is designed to look like the internet I first used when I was 7.</p>
+        <p>Website best viewed in Desktop mode.</p>
+        <p>Icons by Tango and <a href="http://www.famfamfam.com">FamFamFam</a></p>
+        <p>Anything, e-mail me <span class="email"><img src="/public/silk_icons/email.png" /><img draggable="false"
+              src="/public/images/email.png" /></span></p>
+      </div>
+    </div>
+  </main>
+  <script>
+    setInterval(() => {
+      document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+    }, 1000);
+  </script>
+</body>
+
+</html>
