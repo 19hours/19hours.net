@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>network on 19hours</title>
-    <link>http://localhost:1313/tags/network/</link>
+    <link>https://19hours.net/tags/network/</link>
     <description>Recent content in network on 19hours</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://19hours.net/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Buttery smooth home network</title>
-      <link>http://localhost:1313/posts/buttery-smooth-home-network/</link>
+      <link>https://19hours.net/posts/buttery-smooth-home-network/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/buttery-smooth-home-network/</guid>
+      <guid>https://19hours.net/posts/buttery-smooth-home-network/</guid>
       <description>Working at home is nice and comfy but a flaky internet connection can make everyone go crazy. So this morning I took the spare routers that you get from recontracting your ISP plans to reproduce a 4g internet experience at home. It&amp;rsquo;s super fast and convenient because every device switches to the best access point on its own. No more manually switching to different bands when you&amp;rsquo;re close to the router and when you&amp;rsquo;re not.</description>
     </item>
     

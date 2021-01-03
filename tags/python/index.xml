@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on 19hours</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://19hours.net/tags/python/</link>
     <description>Recent content in python on 19hours</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://19hours.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tracking Singapore law with git</title>
-      <link>http://localhost:1313/posts/tracking-singapore-law-with-git/</link>
+      <link>https://19hours.net/posts/tracking-singapore-law-with-git/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tracking-singapore-law-with-git/</guid>
+      <guid>https://19hours.net/posts/tracking-singapore-law-with-git/</guid>
       <description>Because the elections are coming, I tried to understand what laws were introduced and what changes were made to the laws since the last election. I visited sso.agc.gov.sg and they have this timeline box on each page and you have to select a date to see a version of the statute. There was no way to compare different versions on the same screen.
 Today, I created a git repository to track all changes to the statutes.</description>
     </item>
     
     <item>
       <title>Supermarket wars</title>
-      <link>http://localhost:1313/posts/supermarket-wars/</link>
+      <link>https://19hours.net/posts/supermarket-wars/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/supermarket-wars/</guid>
+      <guid>https://19hours.net/posts/supermarket-wars/</guid>
       <description>When I was younger, one of the most frustrating things I had to do was to book a badminton court. You had to be ready two weeks before the actual day to spam the refresh key until the portal released the bookings. I was always so annoyed because I couldn&amp;rsquo;t figure out how it was possible for people in their 50s to be clicking faster than me. Back then, simply using a fast computer and having multiple tabs would beat most people.</description>
     </item>
     
