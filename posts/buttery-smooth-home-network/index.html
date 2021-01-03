@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html><head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Buttery smooth home network</title>
+  <title itemprop="name">Buttery smooth home network | 19hours</title>
+  <meta property="og:title" content="Buttery smooth home network | 19hours" />
+  <meta name="twitter:title" content="Buttery smooth home network | 19hours" />
+  <meta itemprop="name" content="Buttery smooth home network | 19hours" />
+  <meta name="application-name" content="Buttery smooth home network | 19hours" />
+  <meta property="og:site_name" content="" />
+  <meta name="description" content="Don&#39;t settle for anything less than 4 bars." />
+  <meta itemprop="description" content="Don&#39;t settle for anything less than 4 bars." />
+  <meta property="og:description" content="Don&#39;t settle for anything less than 4 bars." />
+  <meta name="twitter:description" content="Don&#39;t settle for anything less than 4 bars." />
+  <base href="http://localhost:1313/posts/buttery-smooth-home-network/">
+  <link rel="canonical" href="http://localhost:1313/posts/buttery-smooth-home-network/" itemprop="url" /> 
+  <meta name="url" content="http://localhost:1313/posts/buttery-smooth-home-network/" />
+  <meta name="twitter:url" content="http://localhost:1313/posts/buttery-smooth-home-network/" /> 
+  <meta property="og:url" content="http://localhost:1313/posts/buttery-smooth-home-network/" />
+  <meta property="og:updated_time" content=2020-07-20T00:00:00Z />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:1313/sitemap.xml" /> 
+  
+  
+    <meta itemprop="image" content="http://localhost:1313/" />
+    <meta property="og:image" content="http://localhost:1313/" />
+    <meta name="twitter:image" content="http://localhost:1313/" />
+    <meta name="twitter:image:src" content="http://localhost:1313/" /> 
+  
+  <link rel="stylesheet" href="/css/butter.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head><body><header class="nav">
+  <div class="nav-rainbow"></div>
+  <div class="container">
+    <div class="nav-container">
+      <div class="nav-info">
+        <a class="title" href="/">19hours</a>
+        <p class="subtitle">but near missed chances</p>  
+      </div>
+      <nav class="top">
+        
+        
+          <a class="nav-link " href="http://localhost:1313/">
+            home
+          </a>
+        
+          <a class="nav-link " href="http://localhost:1313/index.xml">
+            rss
+          </a>
+        
+      </nav>
+    </div>
+  </div>
+</header><div class="container">
+            <div id="content">
+<main class="main-container a-container">
+  <h1 class="atitle">Buttery smooth home network</h1>
+  
+    
+    <div class="aname">by Kevin Chu</div>
+  
+  <h2 class="adescription">Don&#39;t settle for anything less than 4 bars.</h2>
+  <div class="hr"></div>
+  <div class="meta">July 20, 2020 
+    <span style="color: #717485;">in 
+      <a href='/tags/homelab'>Homelab</a>, <a href='/tags/network'>Network</a></span>
+  </div>
+  <p>Working at home is nice and comfy but a flaky internet connection can make everyone go crazy. So this morning I took the spare routers that you get from recontracting your ISP plans to reproduce a 4g internet experience at home. It&rsquo;s super fast and convenient because every device switches to the best access point on its own. No more manually switching to different bands when you&rsquo;re close to the router and when you&rsquo;re not. It really feels like 4g at home, but with 4x faster download speeds and 11x upload speeds anywhere you sit or sleep.</p>
+<p>There are many ways to improve network connectivity at home. I considered two methods, using mesh networks and using access points and using access points is the better option for me.</p>
+<h2 id="differences-between-mesh-networks-and-access-points">Differences between mesh networks and access points</h2>
+<p>Imagine Karen throwing a stack of loose change to Bob, who is standing 10 meters away from her. When Bob catches the money, half of it has flown away and he&rsquo;s left with coins. He takes what&rsquo;s left and mints more of the same coins to throw to Kevin who is standing 10 meters away from him. This is mesh networking.</p>
+<p>In another scenario, Karen calls a courier, maybe Singpost, to deliver the stack of money to Bob. It&rsquo;s an unregistered post. 9 out of 10 times, Mr Courier accidentally pokes a hole in the packet and coins fall out. After receiving the mail and without checking if anything&rsquo;s missing, Bob throws the money to Kevin. This is wireless access point.</p>
+<p>There are benefits to using mesh networks like not needing ethernet ports and devices being cheaper. But they come with a performance cost.</p>
+<h2 id="quick-guide-for-starhub-and-singtel-and-m1">Quick guide for StarHub and Singtel and M1</h2>
+<ol>
+<li>You will need extra routers to act as access points, ethernet cables and one ethernet port at each place where you want to put an access point.</li>
+<li>The main router connected to the ISP modem needs to have DHCP server and NAT enabled.</li>
+<li>Other routers must disable both DHCP server and NAT.</li>
+<li>Set your main router&rsquo;s IP address and subnet. You&rsquo;ll also want the DHCP server to distribute IP addresses in a certain range because you need static IPs for specific devices like your other routers and also things like printers.</li>
+<li>Connect your ISP modem to your WAN port on your main router.</li>
+<li>Connect the main router to your access point routers through LAN. It&rsquo;s important not to connect to the WAN port on your access point router. That way it won&rsquo;t work.</li>
+<li>Enable access point option in the settings for certain routers.</li>
+<li>Set your access point routers to use a static ip, and use the main router ip as the default gateway. Remember to use the same subnet as your main router.</li>
+<li>Configure all routers, including the main router, to broadcast the same SSID across both bands, 2.4Ghz and 5Ghz. Make sure that they have the same password too. This will let devices switch access points seamlessly.</li>
+<li>Reboot all routers.</li>
+<li>Enjoy buttery smooth network connections on all devices everywhere in the house.</li>
+</ol>
+<p>Don&rsquo;t settle for anything less than 4 bars.</p>
+
+</main>
+
+            </div><footer class="bottom">
+  <p></p>
+  
+</footer></div>
+    </body>
+</html>

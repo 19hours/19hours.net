@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: MessinaSansWeb;
+  src: url(/fonts/MessinaSansWeb-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MessinaSansWeb;
+  src: url(/fonts/MessinaSansWeb-RegularItalic.woff);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MessinaSansWeb;
+  src: url(/fonts/MessinaSansWeb-SemiBold.woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MessinaSansWeb;
+  src: url(/fonts/MessinaSansWeb-Bold.woff);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MessinaSansWeb;
+  src: url(/fonts/MessinaSansWeb-Black.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: MessinaSansWeb, sans-serif;
+  color: #1b2a3d;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-rainbow {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(120deg, #5E46BF, #5533FF, #1CA8FF, #84F6D5);
+  margin-bottom: 2rem;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  transition: 100ms ease-in;
+}
+
+.title:hover {
+  color: #5533FF;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px 0;
+  margin: 0 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: 100ms ease-in;
+}
+
+.nav-link:hover {
+  color: #5533FF;
+  border-bottom: 2px solid #5533FF;
+}
+
+.main-container {
+  margin: 4rem auto;
+}
+
+.total-posts {
+  line-height: 1.4;
+  font-weight: 800;
+  border-bottom: 2px solid #1b2a3d;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+  padding: 1.5rem 0.5rem;
+  transition: 100ms ease-in;
+}
+
+.info:hover .ptitle, .info:hover .description, .info:hover .date {
+  color: #5533FF;
+}
+
+.ptitle {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #717485;
+}
+
+.date {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #717485;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.atitle {
+  font-size: 3.75rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -.014em;
+}
+
+.aname {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -.014em;
+  color: #1CA8FF;
+}
+
+.adescription {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -.014em;
+  margin: 1rem 0;
+}
+
+.meta {
+  margin: 1.2rem 0 2.5rem;
+}
+
+.meta a {
+  text-decoration: none;
+  color: inherit;
+  transition: 100ms ease-in;
+}
+
+.meta a:hover {
+  color: #5533FF;
+  border-bottom: 1px solid #5533FF;
+}
+
+.a-container p, .a-container li, .a-container h2 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.a-container li {
+  margin-top: 0.625rem;
+}
+
+.a-container .hr {
+  width: 100%;
+  height: 0.5px;
+  background-color: #1b2a3d;
+}
+
+.a-container h2 {
+  font-weight: 600;
+}
+
+.a-container ol {
+  list-style: none;
+  counter-reset: counter;
+  margin: 1rem 0 2rem;
+  padding-left: 0;
+}
+
+.a-container ol li {
+  position: relative;
+  padding-left: 1.3em;
+}
+
+.a-container ol li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: counter(counter) ".";
+  counter-increment: counter;
+  float: left;
+  font-weight: 800;
+  font-size: .8em;
+  padding-top: .24em;
+  color: #5873a1;
+  color: #5533FF;
+}
+
+@media (max-width: 800px) {
+  .container {
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+}

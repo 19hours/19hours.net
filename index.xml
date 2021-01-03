@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>19hours</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 19hours</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buttery smooth home network</title>
+      <link>http://localhost:1313/posts/buttery-smooth-home-network/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/buttery-smooth-home-network/</guid>
+      <description>Working at home is nice and comfy but a flaky internet connection can make everyone go crazy. So this morning I took the spare routers that you get from recontracting your ISP plans to reproduce a 4g internet experience at home. It&amp;rsquo;s super fast and convenient because every device switches to the best access point on its own. No more manually switching to different bands when you&amp;rsquo;re close to the router and when you&amp;rsquo;re not.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Singapore law with git</title>
+      <link>http://localhost:1313/posts/tracking-singapore-law-with-git/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/tracking-singapore-law-with-git/</guid>
+      <description>Because the elections are coming, I tried to understand what laws were introduced and what changes were made to the laws since the last election. I visited sso.agc.gov.sg and they have this timeline box on each page and you have to select a date to see a version of the statute. There was no way to compare different versions on the same screen.
+Today, I created a git repository to track all changes to the statutes.</description>
+    </item>
+    
+    <item>
+      <title>Supermarket wars</title>
+      <link>http://localhost:1313/posts/supermarket-wars/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/supermarket-wars/</guid>
+      <description>When I was younger, one of the most frustrating things I had to do was to book a badminton court. You had to be ready two weeks before the actual day to spam the refresh key until the portal released the bookings. I was always so annoyed because I couldn&amp;rsquo;t figure out how it was possible for people in their 50s to be clicking faster than me. Back then, simply using a fast computer and having multiple tabs would beat most people.</description>
+    </item>
+    
+    <item>
+      <title>Trace Together&#39;s privacy, or lack thereof</title>
+      <link>http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/</guid>
+      <description>A couple of days ago, I saw the announcement for a new app called TraceTogether. It’s an app by the government to make contact tracing easier. The app appeared on a lot of news websites because it’s a good smart nation initiative.
+I was interested to find out how Bluetooth was used. I launched my terminal and decompiled the app using Jadx to find out what’s powering the app.
+The app uses bluetooth to log other people’s devices around you.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html><head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trace Together&#39;s privacy, or lack thereof</title>
+  <title itemprop="name">Trace Together&#39;s privacy, or lack thereof | 19hours</title>
+  <meta property="og:title" content="Trace Together&#39;s privacy, or lack thereof | 19hours" />
+  <meta name="twitter:title" content="Trace Together&#39;s privacy, or lack thereof | 19hours" />
+  <meta itemprop="name" content="Trace Together&#39;s privacy, or lack thereof | 19hours" />
+  <meta name="application-name" content="Trace Together&#39;s privacy, or lack thereof | 19hours" />
+  <meta property="og:site_name" content="" />
+  <meta name="description" content="Not compulsory, but mandatory to enter." />
+  <meta itemprop="description" content="Not compulsory, but mandatory to enter." />
+  <meta property="og:description" content="Not compulsory, but mandatory to enter." />
+  <meta name="twitter:description" content="Not compulsory, but mandatory to enter." />
+  <base href="http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/">
+  <link rel="canonical" href="http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/" itemprop="url" /> 
+  <meta name="url" content="http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/" />
+  <meta name="twitter:url" content="http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/" /> 
+  <meta property="og:url" content="http://localhost:1313/posts/trace-togethers-privacy-or-lack-thereof/" />
+  <meta property="og:updated_time" content=2020-03-28T00:00:00Z />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:1313/sitemap.xml" /> 
+  
+  
+    <meta itemprop="image" content="http://localhost:1313/" />
+    <meta property="og:image" content="http://localhost:1313/" />
+    <meta name="twitter:image" content="http://localhost:1313/" />
+    <meta name="twitter:image:src" content="http://localhost:1313/" /> 
+  
+  <link rel="stylesheet" href="/css/butter.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head><body><header class="nav">
+  <div class="nav-rainbow"></div>
+  <div class="container">
+    <div class="nav-container">
+      <div class="nav-info">
+        <a class="title" href="/">19hours</a>
+        <p class="subtitle">but near missed chances</p>  
+      </div>
+      <nav class="top">
+        
+        
+          <a class="nav-link " href="http://localhost:1313/">
+            home
+          </a>
+        
+          <a class="nav-link " href="http://localhost:1313/index.xml">
+            rss
+          </a>
+        
+      </nav>
+    </div>
+  </div>
+</header><div class="container">
+            <div id="content">
+<main class="main-container a-container">
+  <h1 class="atitle">Trace Together&#39;s privacy, or lack thereof</h1>
+  
+    
+    <div class="aname">by Kevin Chu</div>
+  
+  <h2 class="adescription">Not compulsory, but mandatory to enter.</h2>
+  <div class="hr"></div>
+  <div class="meta">March 28, 2020 
+    <span style="color: #717485;">in 
+      <a href='/tags/privacy'>Privacy</a>, <a href='/tags/data'>Data</a>, <a href='/tags/govtech'>Govtech</a></span>
+  </div>
+  <p>A couple of days ago, I saw the announcement for a new app called TraceTogether. It’s an app by the government to make contact tracing easier. The app appeared on a lot of news websites because it’s a good smart nation initiative.</p>
+<p>I was interested to find out how Bluetooth was used. I launched my terminal and decompiled the app using Jadx to find out what’s powering the app.</p>
+<p>The app uses bluetooth to log other people’s devices around you. I have done some testing myself to know that one of the ways to figure out who’s around you is to use Bluetooth Low Energy (“BLE”). It makes sense to use BLE because leaving it on all day in the background will not drain your battery. The signal strength of the pings can be used to deduce the distance between users. It’s also how airpods use it to connect to your iphone.</p>
+<p>While I was looking through the code, I saw that the app was using Firebase Analytics and Crashlytics. I found one instance where Firebase Analytics was used: an event is triggered when the user signs in and gives the app permissions. While it is common for apps to use these two analytics libraries to track user engagement and app crashes, the inclusion of such libraries undermines the developers’ goal to keep data collection minimal.</p>
+<p>What caught my eye was another library that was included in the app called Snowplow Analytics. It’s the first time I’ve heard about it and Google tells me it’s an open-sourced analytics platform. Interestingly, a line in the code points to this obscure domain “snowplow-mobile.wogaa.sg”. I visited wogaa.sg and it turns out that wogaa is actually a government data collection service. What’s going on here?</p>
+<p>The FAQ on wogaa describes itself as “a centralized internet-facing government platform to analyze and improve digital services”. A quick look at wogaa’s documentation tells me that it can log user ip addresses, device type, carrier etc and deduce the user’s location based on this information. With this library packaged in the app, there’s no point in anonymising any information because your data is logged on another service anyway.</p>
+<p>By using a proxy, I can intercept the requests to wogaa to find out what data is sent back. You can view a raw request here. From download to setup, there were 19 requests sent to wogaa.</p>
+<p>Clearly, some parts of the app’s FAQ are wrong. I went back to the press releases and tried to verify statements about the app. On data hygiene, I found that all data is uploaded even if the data is older than 21 days. There is no code to purge local data beyond a certain time.</p>
+<p>On the following day, I contacted the team and asked them about my findings. Their response was that wogaa is built by the same team and it’s standard practice to include wogaa in their products. They overlooked the fact that the app is sending more data than necessary so they’re removing wogaa and working to purge local data after 21 days in the next update. During my call with them, I can see that they are a team with great intentions. If you’re concerned about your privacy, it’s best to install the app only after they&rsquo;ve updated the app. Otherwise, this app is a great initiative to improve our contact tracing efforts.</p>
+
+</main>
+
+            </div><footer class="bottom">
+  <p></p>
+  
+</footer></div>
+    </body>
+</html>
