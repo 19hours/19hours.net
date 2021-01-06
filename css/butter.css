@@ -151,7 +151,7 @@ body {
   transition: 100ms ease-in;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link-active {
   color: #5533FF;
   border-bottom: 2px solid #5533FF;
 }

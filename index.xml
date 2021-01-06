@@ -6,7 +6,17 @@
     <description>Recent content on 19hours</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://19hours.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://19hours.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hire me</title>
+      <link>https://19hours.net/hire/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://19hours.net/hire/</guid>
+      <description>I offer software development services and I am based in Singapore. I am available for hire on contract basis. My expertise are listed below.
+MVP and SaaS development  Have an idea? I can develop your MVP or SaaS so you can focus on the business side of things. Leave the technical side of things to me  Website and application scraping  Web and data scraping to automate your job Run scripts to scrape data from websites without public APIs  Scripting  Speed up your work flow by removing manual and time-consuming tasks Run scripts to connect to various APIs and send SMS or notifications when something happens  Web design (HTML5/CSS3)  Integrate your brand colors into a coherent web design Custom pages, landing pages, dashboards Interactive and modern design  Web development  Web applications with logic to do various things Connect to third-party APIs like LinkedIn Plugin development for Wordpress and Shopify  Cross-platform development  Develop iOS, Android, Linux, Mac, Windows and CLI applications  Reverse engineering  Help you to find and document hidden APIs behind applications Decompile mobile applications to find bugs and loopholes (Authorisation required from app developer)  Rate US$90/hour</description>
+    </item>
+    
     <item>
       <title>Buttery smooth home network</title>
       <link>https://19hours.net/posts/buttery-smooth-home-network/</link>
